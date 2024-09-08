@@ -1,0 +1,489 @@
+@import "https://stijndv.com/fonts/Eudoxus-Sans.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.eudoxus-sans-bold {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+:root {
+    --app-header: var(--wh-color-bg-main);
+    --app-footer: var(--wh-color-bg-main);
+    --actual-primary-color: 247, 93, 98;
+    --75-alpha: 0.75;
+    --50-alpha: 0.5;
+    --25-alpha: 0.25;
+    --10-alpha: 0.1;
+    --5-alpha: 0.05;
+
+    --primary-color-75: rgba(var(--actual-primary-color), var(--75-alpha));
+    --primary-color-50: rgba(var(--actual-primary-color), var(--50-alpha));
+    --primary-color-25: rgba(var(--actual-primary-color), var(--25-alpha));
+    --primary-color-10: rgba(var(--actual-primary-color), var(--10-alpha));
+    --primary-color-5: rgba(var(--actual-primary-color), var(--5-alpha));
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--actual-primary-color) var(--wh-color-bg-main);
+    scrollbar-gutter: stable;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 0.5em;
+    scrollbar-gutter: stable;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--wh-color-bg-main);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--actual-primary-color));
+    border-radius: 0.5em;
+    border: 1px transparent;
+}
+
+.code-block {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+    scrollbar-gutter: stable;
+    mask-image: none;
+}
+
+.code-block::-webkit-scrollbar {
+    width: 0.5em;
+    scrollbar-gutter: stable;
+}
+
+.code-block::-webkit-scrollbar-track {
+    background: var(--wh-color-text-main);
+}
+
+.code-block::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--actual-primary-color));
+    color: rgb(var(--actual-primary-color));
+    border-radius: 0.5em;
+    border: 1px transparent;
+}
+
+
+/* starting page card */
+.starting-page-card {
+    border-radius: 0.5em;
+    border: 1px solid var(--primary-color-25);
+    background-size: 50px 50px;
+    background-image: radial-gradient(circle, var(--primary-color-25) 1px, var(--wh-color-bg-main) 1px);
+}
+
+.starting-page-card:hover, .starting-page-title__card:hover {
+    border: 1px solid var(--wh-color-primary);
+    animation: cardpulse 2s infinite !important;
+    mask-image: none;
+}
+
+.see-also__card {
+    border-radius: 0.5em;
+    border: 1px solid var(--primary-color-25);
+    border-bottom-color: var(--primary-color-25) !important; /* YOU. YOU FUCKER. */
+    mask-border: unset;
+    mask-image: unset;
+}
+
+.see-also__card:hover {
+    border: 1px solid var(--wh-color-primary);
+    border-bottom-color: var(--wh-color-primary) !important; /* YOU. YOU FUCKER. */
+    animation: cardpulse 2s infinite !important;
+    mask-image: none;
+}
+
+@keyframes cardpulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 var(--wh-color-primary);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* Search and Theme Switcher */
+._modeClear_joawza_434._dark_joawza_62 {
+    color: var(--primary-color-75);
+}
+
+._modeClear_joawza_434._dark_joawza_62:hover {
+    color: var(--wh-color-primary);
+}
+
+/* product name */
+.wh-header__product-name {
+    color: var(--wh-color-primary);
+}
+
+/* ToC */
+.app__sidebar {
+    border-right: 1px transparent;
+}
+
+/* selected/hovered in ToC */
+.toc-item--selected {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.toc-item--highlighted:first-child:last-child {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.toc-item--selected:hover, .toc-item--theme-light:hover, .toc-item--theme-dark:hover {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: var(--primary-color-25);
+}
+
+/* tab for right side small ToC list */
+.toc-node--selected:after {
+    border-radius: 0.25em;
+}
+
+/* Background highlight in Topics pages for secondary sections */
+.section-starting-page-content__section--highlighted {
+    background-color: var(--primary-color-10);
+    border-radius: 0.5em;
+}
+
+/* weird bar right at the end of secondary in topics and top of footer, aka where the footer nav links are ig */
+.navigation-links {
+    border-top: 1px transparent;
+}
+
+/* label and title backdrop roudning and gradient adjustment */
+.title__backdrop {
+    background-image: linear-gradient(180deg, var(--primary-color-25), transparent 50%);
+    border-radius: 0.5em 0.5em 0.5em 0;
+}
+
+.label__content {
+    border-radius: 1em 1em 1em 1em;
+}
+
+._tab_1fcqo6x_13 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    overflow: unset; /* WE RAN INTO A CHROMIUM BUG AND WORKED AROUND THIS STUPID FUCKER */
+}
+
+/* hover card when hovering over links with information */
+._card_1uu62mp_6 {
+    border-radius: 0.5em;
+    border-color: var(--primary-color-75);
+}
+
+/* Footer */
+.app__footer {
+    background-color: var(--primary-color-10);
+    border-radius: 0.5em 0.5em 0.5em 0;
+}
+
+/* footer links bullshit down to the last rs-text-3 thingy */
+.footer {
+    --app-link-color-dark: var(--wh-color-primary);
+    --app-link-border-color-dark: var(--wh-color-primary);
+    color: var(--wh-color-primary);
+}
+/* stop being so fucking picky holy shit */
+.rs-text-3_theme_dark {
+    color: var(--wh-color-primary);
+}
+
+.rs-text-3_theme_dark.rs-text-3_hardness_hard {
+    color: var(--wh-color-primary);
+}
+
+/* all Definition blocks in things like the Commands pages and Config pages */
+.definition-list__group {
+    border-radius: 0.5em;
+    background-color: var(--primary-color-5);
+    border: 1px solid var(--primary-color-25);
+}
+
+/* prodedures */
+.procedure-steps {
+    border-radius: 0.5em;
+    border: 1px solid var(--primary-color-25);
+}
+
+/* video player */
+.video-player.article__bordered-element.child { /* this took me 15m to figure out the fuckin class. */
+    border-radius: 0.5em;
+    border: 1px transparent;
+}
+
+/* tldr block */
+.micro-format__content {
+    animation: tldrpulse 2s infinite;
+}
+
+@keyframes tldrpulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* warning adminition */
+.prompt__wrapper--type-warning {
+    animation: warningadmonitionpulse 2s infinite;
+}
+
+@keyframes warningadmonitionpulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 var(--rs-color-danger);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* notes admonition */
+.prompt__wrapper--type-note {
+    animation: noteadmonitionpulse 2s infinite;
+}
+
+@keyframes noteadmonitionpulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 var(--rs-color-success);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.prompt__wrapper--type-tip {
+    animation: tipadmonitionpulse 2s infinite;
+}
+
+@keyframes tipadmonitionpulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 var(--wh-color-tip);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+.article__figure .article__img {
+    border-radius: 0.5em;
+}
+
+.title__content {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bolder;
+}
+
+.article__p {
+    font-family: "Poppins", sans-serif;
+}
+
+.toc-item {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: normal;
+}
+
+.rs-h1 {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bolder;
+}
+
+.rs-h2 {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bold;
+}
+
+.rs-h3 {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bold;
+}
+
+.rs-subtitle-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+}
+
+.rs-text-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+}
+
+.rs-text-3 {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bold;
+}
+
+.navigation-links__next {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bold;
+}
+
+.navigation-links__prev {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-weight: bold;
+}
