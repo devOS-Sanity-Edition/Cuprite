@@ -9,6 +9,9 @@ Cuprite is a rounded corners theme designed for Writerside documentation. The po
 
 If you want to see how Cuprite looks in a live environment, you can view the [Yiski documentation](https://yiski.devos.one).
 
+> [!NOTE]
+> We do not support Algolia search as we don't have a key, so the theme is likely to look off with Search functions. Sorry about that. This may change in the future though.
+
 ## Usage
 
 > [!IMPORTANT]
