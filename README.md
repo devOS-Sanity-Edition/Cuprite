@@ -79,9 +79,11 @@ Individual tweaks will be available at a later date.
 
 ## Videos
 
-![video](docs/assets/Arc_0LWw56574s.mp4)
-![video](docs/assets/Arc_dOcSgoPasM.mp4)
-![video](docs/assets/Arc_UXSKlaAANe.mp4)
+https://github.com/user-attachments/assets/ca873f31-5419-4eb0-b56f-249146f3cc93
+
+https://github.com/user-attachments/assets/12418d1a-35b2-4c8d-b8cb-80a45b5e0ec6
+
+https://github.com/user-attachments/assets/3e61d459-1bd1-412a-afe7-398daa3301d2
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
