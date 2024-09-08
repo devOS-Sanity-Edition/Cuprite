@@ -40,10 +40,12 @@ Open your Writerside project and go to your `Writerside/cfg/buildprofiles.xml`, 
 
 Now under `Writerside/cfg`, make a new folder called `static`, and then a file named `custom.css`. Writerside will now pull that Custom CSS file.
 
+Now go to https://github.com/devOS-Sanity-Edition/Cuprite/blob/main/Cuprite.css and download the CSS file. Drop that CSS file into the same `static` directory.
+
 On the top, add this if you want *all* of the CSS tweaks Cuprite makes
 
 ```css
-@import "https://raw.githubusercontent.com/devOS-Sanity-Edition/Cuprite/main/Cuprite.css";
+@import "Cuprite.css";
 ```
 
 After that, add the following to your Custom CSS file
@@ -54,6 +56,10 @@ After that, add the following to your Custom CSS file
     --actual-primary-color: 247, 93, 98;
 }
 ```
+
+We would've supported loading the CSS file using a link to the GitHub repository, however, CORS happened. :C
+
+![corsmoment](docs/assets/Arc_E9IkdEzioq.png)
 
 Individual tweaks will be available at a later date.
 
